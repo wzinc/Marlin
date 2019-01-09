@@ -683,7 +683,7 @@ FORCE_INLINE void _draw_heater_status(const int8_t heater, const char prefix, co
       lcd.print(itostr3left(t2 + 0.5));
 
   if (prefix >= 0) {
-    lcd.print((char)LCD_DEGREE_CHAR);
+    // lcd.print((char)LCD_DEGREE_CHAR);
     lcd.write(' ');
     if (t2 < 10) lcd.write(' ');
   }

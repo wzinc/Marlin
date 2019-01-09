@@ -260,7 +260,7 @@ static void lcd_implementation_status_screen() {
     HOTEND_LOOP() _draw_heater_status(STATUS_SCREEN_HOTEND_TEXT_X(e), e, blink);
 
     // Heated bed
-    #if HOTENDS < 4 && HAS_HEATED_BED
+    #if HOTENDS < 5 && HAS_HEATED_BED
       _draw_heater_status(STATUS_SCREEN_BED_TEXT_X, -1, blink);
     #endif
 

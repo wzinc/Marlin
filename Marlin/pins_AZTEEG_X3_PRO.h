@@ -107,6 +107,19 @@
 //
 // Temperature Sensors
 //
+
+//#if TEMP_SENSOR_0 != 0
+//  #define TEMP_0_PIN        13   // Analog Input
+//#else
+//  #define TEMP_0_PIN        0   // Analog Input
+//#endif
+//
+//#if TEMP_SENSOR_1 != 0
+//  #define TEMP_1_PIN        15   // Analog Input
+//#else
+//  #define TEMP_1_PIN        0   // Analog Input
+//#endif
+
 #define TEMP_2_PIN         12   // Analog Input
 #define TEMP_3_PIN         11   // Analog Input
 #define TEMP_4_PIN         10   // Analog Input
@@ -174,4 +187,3 @@
   #define SPINDLE_LASER_ENABLE_PIN 20   // Pin should have a pullup!
   #define SPINDLE_DIR_PIN          21
 #endif
-
